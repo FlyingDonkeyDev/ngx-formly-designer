@@ -6,7 +6,7 @@ import { FormlyDesignerService } from './formly-designer.service';
 export declare class FormlyDesignerComponent implements OnDestroy, OnInit {
     private fieldsService;
     private formBuilder;
-    private formlyDesignerService;
+    formlyDesignerService: FormlyDesignerService;
     formlyFormContainer: any;
     fieldsChange: EventEmitter<FormlyFieldConfig[]>;
     modelChange: EventEmitter<any>;

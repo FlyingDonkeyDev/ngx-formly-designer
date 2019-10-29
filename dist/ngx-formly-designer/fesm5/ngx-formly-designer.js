@@ -10,7 +10,7 @@ import 'jquery';
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var FormlyDesignerWrapperComponent = /** @class */ (function (_super) {
     __extends(FormlyDesignerWrapperComponent, _super);
@@ -31,7 +31,7 @@ var FormlyDesignerWrapperComponent = /** @class */ (function (_super) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var FORMLY_DESIGNER_CONFIG_TOKEN = new InjectionToken('FORMLY_DESIGNER_CONFIG_TOKEN');
@@ -158,7 +158,7 @@ var FormlyDesignerConfig = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var keyPathMemberName = '_formlyDesignerKeyPath';
@@ -317,7 +317,7 @@ function (val) { return typeof val === 'string' || val instanceof String; });
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var FieldsService = /** @class */ (function () {
     function FieldsService(formlyDesignerConfig) {
@@ -525,7 +525,7 @@ var FieldsService = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var FormlyDesignerService = /** @class */ (function () {
     function FormlyDesignerService(designerConfig, fieldsService, formlyConfig) {
@@ -1097,7 +1097,7 @@ var FormlyDesignerService = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var FormlyDesignerFieldWrapperComponent = /** @class */ (function (_super) {
     __extends(FormlyDesignerFieldWrapperComponent, _super);
@@ -1302,7 +1302,7 @@ var FormlyDesignerFieldWrapperComponent = /** @class */ (function (_super) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var FormlyDesignerFieldGroupWrapperComponent = /** @class */ (function (_super) {
     __extends(FormlyDesignerFieldGroupWrapperComponent, _super);
@@ -1543,7 +1543,7 @@ var FormlyDesignerFieldGroupWrapperComponent = /** @class */ (function (_super) 
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var TemplateDesigner = /** @class */ (function () {
     function TemplateDesigner() {
@@ -1595,7 +1595,7 @@ var TemplateDesigner = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var fieldComponents = [];
@@ -1619,7 +1619,7 @@ var config = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var FormlyDesignerComponent = /** @class */ (function () {
     function FormlyDesignerComponent(fieldsService, formBuilder, formlyDesignerService) {
@@ -1753,7 +1753,7 @@ var FormlyDesignerComponent = /** @class */ (function () {
     FormlyDesignerComponent.decorators = [
         { type: Component, args: [{
                     selector: 'formly-designer',
-                    template: "\n        <formly-designer-field-picker (selected)=\"onFieldSelected($event)\">\n        </formly-designer-field-picker>\n        <form novalidate [formGroup]=\"form\">\n            <formly-form [options]=\"options\" [model]=\"model\" [form]=\"form\" [fields]=\"fields\">\n            </formly-form>\n        </form>\n        <!--<div>\n            Designer Fields Debug:\n            <pre>{{ fields | decycle | json }}</pre>\n        </div>-->\n    ",
+                    template: "\n        <formly-designer-field-picker (selected)=\"onFieldSelected($event)\">\n        </formly-designer-field-picker>\n        <form novalidate [formGroup]=\"form\">\n            <formly-form [options]=\"options\" [model]=\"formlyDesignerService.model\" [form]=\"form\" [fields]=\"formlyDesignerService.fields\">\n            </formly-form>\n        </form>\n        <!--<div>\n            Designer Fields Debug:\n            <pre>{{ fields | decycle | json }}</pre>\n        </div>-->\n    ",
                     encapsulation: ViewEncapsulation.None,
                     providers: [FormlyDesignerService],
                     styles: ["\n        formly-designer-field-picker .form-group > .input-group > formly-designer-type-select > select {\n            border-radius: .25rem 0 0 .25rem;\n            border-right: 0;\n        }\n        formly-designer-wrapper-editor .card > .card-body .form-control {\n            width: 100%;\n        }\n        formly-designer-wrapper-picker .form-group > .input-group > formly-designer-wrapper-select > select {\n            border-radius: .25rem 0 0 .25rem;\n            border-right: 0;\n        }\n    "]
@@ -1778,7 +1778,7 @@ var FormlyDesignerComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var FIELD_EDITOR_CONTROL_VALUE_ACCESSOR = {
@@ -2049,7 +2049,7 @@ var FieldEditorComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var FieldPickerComponent = /** @class */ (function () {
     function FieldPickerComponent(fb, formlyDesignerConfig) {
@@ -2127,7 +2127,7 @@ var FieldPickerComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var TYPE_SELECT_CONTROL_VALUE_ACCESSOR = {
@@ -2264,7 +2264,7 @@ var TypeSelectComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var WRAPPER_EDITOR_CONTROL_VALUE_ACCESSOR = {
@@ -2455,7 +2455,7 @@ var WrapperEditorComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var WRAPPER_SELECT_CONTROL_VALUE_ACCESSOR = {
@@ -2591,7 +2591,7 @@ var WrapperSelectComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var WrapperPickerComponent = /** @class */ (function () {
     function WrapperPickerComponent(formBuilder, formlyDesignerConfig, formlyDesignerService) {
@@ -2694,7 +2694,7 @@ var WrapperPickerComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var WrappersPickerComponent = /** @class */ (function () {
     function WrappersPickerComponent(formlyDesignerConfig, formlyDesignerService) {
@@ -2818,7 +2818,7 @@ var WrappersPickerComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @template T
@@ -2895,7 +2895,7 @@ function traverseValue(key, value, replace) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var DecyclePipe = /** @class */ (function () {
     function DecyclePipe() {
@@ -2919,7 +2919,7 @@ var DecyclePipe = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var FormlyDesignerModule = /** @class */ (function () {
     function FormlyDesignerModule(formlyConfig) {
@@ -2983,12 +2983,12 @@ var FormlyDesignerModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { fieldComponents, wrapperComponents, config, FieldsService, FORMLY_DESIGNER_CONFIG_TOKEN, FormlyDesignerConfig, FormlyDesignerService, FormlyDesignerComponent, FormlyDesignerModule, decycle, FieldEditorComponent as ɵe, FieldPickerComponent as ɵf, TypeSelectComponent as ɵg, WrapperEditorComponent as ɵh, WrapperPickerComponent as ɵj, WrapperSelectComponent as ɵi, WrappersPickerComponent as ɵk, DecyclePipe as ɵl, TemplateDesigner as ɵd, FormlyDesignerWrapperComponent as ɵa, FormlyDesignerFieldWrapperComponent as ɵb, FormlyDesignerFieldGroupWrapperComponent as ɵc };

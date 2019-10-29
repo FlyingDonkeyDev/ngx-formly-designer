@@ -12,7 +12,7 @@ import { catchError, debounceTime, tap } from 'rxjs/operators';
         <formly-designer-field-picker (selected)="onFieldSelected($event)">
         </formly-designer-field-picker>
         <form novalidate [formGroup]="form">
-            <formly-form [options]="options" [model]="model" [form]="form" [fields]="fields">
+            <formly-form [options]="options" [model]="formlyDesignerService.model" [form]="form" [fields]="formlyDesignerService.fields">
             </formly-form>
         </form>
         <!--<div>
@@ -54,7 +54,7 @@ export class FormlyDesignerComponent implements OnDestroy, OnInit {
     constructor(
         private fieldsService: FieldsService,
         private formBuilder: FormBuilder,
-        private formlyDesignerService: FormlyDesignerService
+        public formlyDesignerService: FormlyDesignerService
     ) { }
 
     @Input()
