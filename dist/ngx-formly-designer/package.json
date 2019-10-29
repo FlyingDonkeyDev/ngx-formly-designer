@@ -1,0 +1,39 @@
+{
+  "name": "ngx-formly-designer",
+  "version": "0.0.5",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franzeal/ngx-formly-designer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/franzeal/ngx-formly-designer/issues"
+  },
+  "homepage": "https://github.com/franzeal/ngx-formly-designer#readme",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0",
+    "@angular/forms": "^6.0.0",
+    "@ngx-formly/core": "^4.0.0",
+    "@ngx-formly/bootstrap": "^4.0.0",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "lodash-es": "^4.17.0",
+    "popper.js": "^1.12.9",
+    "rxjs": "^6.0.0"
+  },
+  "main": "bundles/ngx-formly-designer.umd.js",
+  "module": "fesm5/ngx-formly-designer.js",
+  "es2015": "fesm2015/ngx-formly-designer.js",
+  "esm5": "esm5/ngx-formly-designer.js",
+  "esm2015": "esm2015/ngx-formly-designer.js",
+  "fesm5": "fesm5/ngx-formly-designer.js",
+  "fesm2015": "fesm2015/ngx-formly-designer.js",
+  "typings": "ngx-formly-designer.d.ts",
+  "metadata": "ngx-formly-designer.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
